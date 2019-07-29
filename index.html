@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang ='en'>
+<head>
+	<meta charset="utf-8">
+	<title>Sally Llama Resume</title>
+	<link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="application-root"></div>
+
+<script
+ 	src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  	src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>	
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script type='text/babel'>
+function App(props) {
+  return (
+    <body>
+      {props.children}
+    </body>
+
+    
+  );
+}
+
+ReactDOM.render(
+  <App className='my-class'>
+    <header>
+    	<h1>Sally Llama</h1>
+    </header>
+    <nav className='App-nav'>
+      <ul className='nav-list'>
+        <li> <a href="#ContactInfo">Contact Info</a></li>
+        <li> <a href="#Education">Education</a></li>
+        <li> <a href="#EmploymentHistory">Employment History</a></li>
+      </ul>
+    </nav>
+
+    <main class='App-main'>
+      
+      <h2 id="ContactInfo">Contact Info</h2>
+
+      <address className='App-address'>
+        <img className='imageHeadshot' src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Sally Student" />
+
+        <ul>
+          <li><a href= "mailto:sallystudent@llamauniversity.edu"> Email </a> </li>
+          <li>Phone Number: 000-000-0000</li>
+        </ul>
+      </address>
+
+      <section className='App-education'>
+        <h2 id="Education">Education</h2>
+          <ul>
+            <li>2015-2019 Llama University</li>
+          </ul>
+      </section>
+
+      <section className='App-employment'>
+        <h2 id="EmploymentHistory">Employment History</h2>
+        <ul>
+         <li>2017-2019 Llama Healthcare, Front Desk
+            <p>Answered phones, manned the front desk</p>
+          </li>
+          <li>2015-2017 Llama Library, Book Sorter
+            <p>Put books back in their proper location; aided customers in locating appropriate resources in the form of published media</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </App>,
+  document.querySelector('#application-root')
+);
+
+</script>
+
+</body>
+</html>

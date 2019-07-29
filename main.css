@@ -1,0 +1,37 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+	text-align: center;
+	font-size: 32px;
+}
+
+main {
+	display: flex;
+	flex-direction:column;
+	align-content: center;
+}
+
+nav{
+	display:flex;
+	flex-direction: row;
+	
+}
+
+.nav-list{
+	list-style: none;
+}
+
+address{
+	display: center;
+}
+
+.imageHeadshot {
+	width: 90%;
+}
